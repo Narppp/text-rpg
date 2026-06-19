@@ -8,7 +8,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from components import intro, player_info
+from components import intro, player_info  # noqa: E402
 
 
 def main():
