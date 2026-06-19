@@ -1,6 +1,7 @@
 # Patch Notes
 
 def patch():
+    print("""Date: June 18, 2026""")
     print("""Text RPG 1.0 (Beta):
     - Added Getting Player Info
     - Added Introduction
