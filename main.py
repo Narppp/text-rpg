@@ -12,14 +12,11 @@ from components import intro, player_info  # noqa: E402
 from components.options import exit, options, patch_notes, play, tutorial  # noqa: E402
 from components.player import player_classes, player_stats  # noqa: E402
 
-
 def main():
     info = player_info.user_info()
-    user_choice = intro.intro(info)
 
-    game_running = True
-
-    if game_running:
+    while True: 
+        user_choice = intro.intro(info)
         if user_choice == "Tutorial":
             pass
         elif user_choice == "Play Game":
@@ -27,11 +24,9 @@ def main():
         elif user_choice == "Options":
             pass
         elif user_choice == "Patch Notes":
-            pass
+            patch_notes.patch()
         else:
-            game_running = False
-    else:
-        exit()
+            exit()
 
     # Running the game
 
