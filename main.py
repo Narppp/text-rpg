@@ -10,7 +10,6 @@ if PROJECT_ROOT not in sys.path:
 
 from components import intro, player_info  # noqa: E402
 from components.options import exit, options, patch_notes, play, tutorial  # noqa: E402
-from components.player import player_classes, player_stats  # noqa: E402
 
 def main():
     info = player_info.user_info()
@@ -20,7 +19,7 @@ def main():
         if user_choice == "Tutorial":
             pass
         elif user_choice == "Play Game":
-            pass
+            play.play_game()
         elif user_choice == "Options":
             pass
         elif user_choice == "Patch Notes":
